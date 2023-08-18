@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_covid_tracker_app/views/world_states.dart';
 
+// ignore: must_be_immutable
 class DetailScreen extends StatefulWidget {
   String name;
   String image;

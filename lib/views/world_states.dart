@@ -35,7 +35,7 @@ class _WorldStateState extends State<WorldState> with TickerProviderStateMixin {
     return Scaffold(
       body: SafeArea(
           child: Padding(
-        padding: EdgeInsets.all(15.0),
+        padding: const EdgeInsets.all(15.0),
         child: Column(
           children: [
             SizedBox(
@@ -122,14 +122,14 @@ class _WorldStateState extends State<WorldState> with TickerProviderStateMixin {
                                 context,
                                 MaterialPageRoute(
                                     builder: (context) =>
-                                        CountriesListScreen()));
+                                        const CountriesListScreen()));
                           },
                           child: Container(
                             height: 50,
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(10),
-                                color: Color(0xff1aa260)),
-                            child: Center(child: Text("Track Countries")),
+                                color: const Color(0xff1aa260)),
+                            child: const Center(child: Text("Track Countries")),
                           ),
                         ),
                       ],
@@ -143,6 +143,7 @@ class _WorldStateState extends State<WorldState> with TickerProviderStateMixin {
   }
 }
 
+// ignore: must_be_immutable
 class ReusableRow extends StatelessWidget {
   ReusableRow({super.key, required this.title, required this.value});
   String title, value;
